@@ -30,6 +30,14 @@ fn my_while_loop() {
         a += 1;
     }
 }
+fn my_while_loop2() {
+    let mut a = 5;
+    while a > 0 {
+        println!("{:?}", a);
+        a -= 1;
+    }
+    println!("Done!!!!");
+}
 fn sub(a: i32, b: i32) -> i32 {
     a - b
 }
@@ -44,6 +52,7 @@ fn main() {
     println!("result {}", result);
     my_loop();
     my_while_loop();
+    my_while_loop2();
     let five = sub(8, 3);
     println!("{}", five);
 }
