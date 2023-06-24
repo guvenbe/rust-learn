@@ -8,6 +8,18 @@ enum Color {
     Blue,
     Green,
 }
+
+enum DispenserItem {
+    Empty,
+    Ammo(u8),
+    Things(String, i32),
+    Place { x: i32, y: i32 },
+}
+
+impl DispenserItem {
+    fn display(&self) {}
+}
+
 fn display_color(color: Color) {
     match color {
         Color::Red => println!("{}", "Red"),
@@ -25,4 +37,18 @@ fn main() {
 
     let color = Color::Red;
     display_color(color);
+
+    let mut my_var: Option<i32> = None;
+    if let Some(x) = my_var {
+        println!("value is {}", x);
+    };
+
+    match my_var {
+        Some(x) => {
+            println!("values is {}", x);
+        }
+        None => {
+            println!("no value");
+        }
+    }
 }
