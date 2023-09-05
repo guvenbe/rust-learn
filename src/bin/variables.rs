@@ -21,6 +21,11 @@ fn main(){
 
     println!("c:{c}");
 
+    let x = "three"; // don't change this line
+    println!("Spell a Number : {}", x);
+    let x = 3; // don't rename this variable
+    println!("Number plus two is : {}", x + 2);
+
     //scope
 
     let d: i32 = 30;
@@ -30,5 +35,7 @@ fn main(){
     }
 
     println!("d is:{d}")
+
+
 
 }
