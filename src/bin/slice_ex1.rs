@@ -15,6 +15,9 @@ fn main() {
     }
 }
 
+// this function tries to search for substr in text from left to right
+// if it finds substr, it returns the index where it starts
+// otherwise it returns length of text (which is an invalid index)
 fn find_substr_pos(text: &str, substr: &str) -> usize {
     if text.len() < substr.len(){
         return text.len();
