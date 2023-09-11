@@ -8,4 +8,8 @@ fn main(){
     let c = CASINO_NAME; // occupy a location in memory
     let d = CASINO_NAME;
 
+    let mut s1 = String::from("LGR");
+    let r1 = &s1;
+    let r2 = &mut s1;
+    println!("{r1}");
 }
