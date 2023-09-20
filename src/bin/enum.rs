@@ -1,6 +1,6 @@
 struct  Product {
     name: String,
-    category: category,
+    category: ProductCategory,
     price: f32,
     in_stock: bool,
 }
@@ -20,5 +20,5 @@ fn main() {
         price: 200.98,
         in_stock: true
     };
-    
+
 }
