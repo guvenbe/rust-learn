@@ -14,4 +14,8 @@ fn main() {
             count: 3
         },
     ];
+
+    for item in receipt{
+        println!("name: {:?}, count: {:?}", item.name, item.count);
+    }
 }
