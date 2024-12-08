@@ -1,4 +1,5 @@
 fn display_first_name<S: Into<String>>(fist_name: S) {
+    const MAX: i32 = 99;
     let string_value = fist_name.into();
     println!("First Name: {}", string_value);
 }
