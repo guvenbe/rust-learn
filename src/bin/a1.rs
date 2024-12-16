@@ -11,4 +11,5 @@ fn display_last_name<S: Into<String>>(last_name: S) {
 fn main() {
     display_first_name("Bora");
     display_last_name("Guven");
+
 }
