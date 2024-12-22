@@ -36,6 +36,7 @@ fn main() {
 
             Some(Student { name, gpa })
         })
+        .filter(|s|s.gpa>=3.5)
         .collect();
 
     for s in good_students {
