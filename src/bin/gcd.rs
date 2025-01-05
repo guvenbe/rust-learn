@@ -1,6 +1,8 @@
+use std::env;
 fn main() {
     let res =gcd(8,12);
-    println!("{}", res);
+    println!("the gcd of {} and {} is {}", 8, 12, res);
+    let args = env::args();
 }
 
 fn gcd(mut n: i32, mut m: i32) -> i32 {
