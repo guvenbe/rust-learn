@@ -18,6 +18,7 @@ tokio = { version = "1.42.0", features = ["full"] }
 tokio-stream = "0.1.17"
 num-bigint = "0.4.6"
 num-traits = "0.2.19"
+chrono = "0.4.39"
 
 [[bin]]
 name = "debug_target"
