@@ -522,6 +522,7 @@ dependencies = [
  "crossbeam",
  "env_logger",
  "error-stack",
+ "humantime",
  "log",
  "num-bigint",
  "num-traits",
