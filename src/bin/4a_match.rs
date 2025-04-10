@@ -1,3 +1,5 @@
+mod new_type_pattern_demo;
+
 fn main(){
     let my_bool = true;
 
