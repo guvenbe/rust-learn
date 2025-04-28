@@ -50,7 +50,7 @@ impl TryFrom<&str> for Rgb {
         }
         let (r, g, b) = (
             u8::from_str_radix(&hex[1..=2], 16)?,
-            u8::from_str_radix(&hex[2..=4], 16)?,
+            u8::from_str_radix(&hex[3..=4], 16)?,
             u8::from_str_radix(&hex[5..=6], 16)?,
         );
         Ok(Self(r, g, b))
