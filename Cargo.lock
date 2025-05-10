@@ -1197,6 +1197,7 @@ dependencies = [
  "color-eyre",
  "colored",
  "crossbeam",
+ "crossbeam-channel",
  "env_logger",
  "error-stack",
  "humantime",
