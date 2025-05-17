@@ -1204,6 +1204,7 @@ dependencies = [
  "log",
  "num-bigint",
  "num-traits",
+ "parking_lot",
  "rand",
  "reqwest",
  "serde",

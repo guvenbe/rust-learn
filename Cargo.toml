@@ -28,6 +28,7 @@ reqwest = { version = "0.12.7", features = ["blocking", "json"] }
 serde_json = "1.0.127"
 serde = { version = "1.0.209", features = ["derive"] }
 crossbeam-channel = "0.5.8"
+parking_lot = "0.12.3"
 
 [[bin]]
 name = "debug_target"
