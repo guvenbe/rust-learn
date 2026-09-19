@@ -1,0 +1,3 @@
+[workspace]
+members = ["OpenConn", "SimpleServer", "SimpleClient"]
+resolver = "2"

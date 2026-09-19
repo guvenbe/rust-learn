@@ -1,0 +1,1 @@
+/home/guvenbe/RustroverProjects/rust-learn/1-io-demo-with-enum/target/debug/SimpleClient: /home/guvenbe/RustroverProjects/rust-learn/1-io-demo-with-enum/OpenConn/src/lib.rs /home/guvenbe/RustroverProjects/rust-learn/1-io-demo-with-enum/SimpleClient/src/main.rs
