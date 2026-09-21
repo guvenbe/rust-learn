@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "library",
+    "frontend",
+    "tester",
+]
+
+[workspace.dependencies]
+clap = { version = "4.0", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+

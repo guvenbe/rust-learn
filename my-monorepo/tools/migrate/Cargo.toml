@@ -1,0 +1,13 @@
+[package]
+name = "migrate"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Simple CLI tool to illustrate a workspace tool crate."
+
+[dependencies]
+clap = { workspace = true }
+anyhow = { workspace = true }
+log = { workspace = true }
+env_logger = "0.11"
+data-model = { path = "../../libraries/data-model" }

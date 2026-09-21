@@ -1,0 +1,15 @@
+# If you run with CPython: 
+$ python sample.py
+Data allocated: 10485760 bytes
+Exiting create_data
+Data released (via GC)
+Back in main
+$
+
+# If you run with pypy: 
+$ pypy3 sample.py
+Data allocated: 10485760 bytes
+Exiting create_data
+Back in main
+$
+

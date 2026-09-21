@@ -1,0 +1,11 @@
+[package]
+name = "api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core" }
+# Keep serde as a shared dep (even if this crate doesn’t derive), per your requirement
+serde = { workspace = true }
+# Use serde_json for JSON work; DO NOT put features on `serde` for JSON
+serde_json = { workspace = true }

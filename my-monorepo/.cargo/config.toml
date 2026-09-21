@@ -1,0 +1,15 @@
+[build]
+# Você pode fixar um target-dir compartilhado (opcional)
+# target-dir = "target"
+
+[profile.dev]
+incremental = true
+codegen-units = 16
+debug = true
+opt-level = 0
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+opt-level = 3
+strip = "symbols"

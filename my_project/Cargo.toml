@@ -1,0 +1,9 @@
+[workspace]
+members = ["core", "api", "cli"]
+resolver = "2"
+
+[workspace.dependencies]
+# Define serde ONCE for the whole workspace
+serde = { version = "1.0", features = ["derive"] }
+# If multiple crates use serde_json, centralize it too (optional)
+serde_json = "1.0"

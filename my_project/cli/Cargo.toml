@@ -1,0 +1,10 @@
+[package]
+name = "cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+core = { path = "../core" }
+api  = { path = "../api" }
+# If the CLI also needs serde (e.g., config), inherit it:
+serde = { workspace = true }

@@ -1,0 +1,19 @@
+[package]
+name = "data-model"
+version = "0.1.0"
+edition = "2021"
+description = "Shared domain types for the monorepo."
+license = "MIT OR Apache-2.0"
+repository = "https://example.com/my-monorepo"
+
+[dependencies]
+serde = { workspace = true }
+anyhow = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+
+[dev-dependencies]
+serde_json = { workspace = true }
+
+[lib]
+path = "src/lib.rs"

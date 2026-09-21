@@ -1,0 +1,16 @@
+[package]
+name = "api-server"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "Minimal HTTP API using axum, sharing types from data-model."
+
+[dependencies]
+axum = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+log = { workspace = true }
+env_logger = "0.11"
+data-model = { path = "../../libraries/data-model" }

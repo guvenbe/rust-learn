@@ -1,0 +1,20 @@
+[package]
+name = "systems_mindset_demo"
+version = "0.1.0"
+edition = "2021"
+description = "app demonstrating systems mindset: zero-cost abstractions, fearless concurrency, compiler ergonomics, and lifetimes."
+
+[dependencies]
+tokio = { version = "1.39", features = ["rt-multi-thread", "macros", "time", "sync"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+dashmap = "5.5"
+rand = "0.8"
+
+[profile.release]
+# Show we care about perf while keeping debug info handy
+debug = 1
+lto = "thin"
+codegen-units = 1

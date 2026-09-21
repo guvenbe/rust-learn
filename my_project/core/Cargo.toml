@@ -1,0 +1,8 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Inherit the shared serde config (with derive) from the workspace
+serde = { workspace = true }
